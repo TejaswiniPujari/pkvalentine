@@ -9,7 +9,7 @@ function hideGuidline() {
     document.getElementById('main').classList.remove('main');
 }
 
-const userRankTextRound1 = {
+const userRankText = {
     0: '1st Rank',
     1: '2nd Rank',
     2: '3rd Rank',
@@ -22,14 +22,14 @@ const talentRankTextRound1 = {
     2: 'target 03- 05 Million Gems',
     3: '01- 03 Million Gems',
 }
-const userRewardsRound1 = {
+const userRewards = {
     0: 'User receives 25% of total beans pot',
     1: 'User receives 20% of total beans pot',
     2: 'User receives 15% of total beans pot',
     3: 'User receives 10% of total beans pot',
     4: 'User receives 5% of total beans pot'
 }
-const userRewardsImgRound1 = {
+const userRewardsImg = {
     0: 'img/user-rewards/BeansPot1.png',
     1: 'img/user-rewards/BeansPot2.png',
     2: 'img/user-rewards/BeansPot3.png',
@@ -48,32 +48,11 @@ const talentRewardsRound1 = {
     2: '07 days Audio theme of PK combat + PK Superstar Profile Frame',
     3: '5 days Audio theme of PK combat',
 }
-const userRankTextRound2 = {
-    0: '1st Rank',
-    1: '2nd Rank',
-    2: '3rd Rank',
-    3: '4th Rank',
-    4: '5-10th Rank'
-}
 const talentRankTextRound2 = {
     0: 'target 10 Million & Above Gems',
     1: 'target 05- 10 Million Gems',
     2: 'target 03- 05 Million Gems',
     3: '01- 03 Million Gems',
-}
-const userRewardsRound2 = {
-    0: 'User receives 25% of total beans pot',
-    1: 'User receives 20% of total beans pot',
-    2: 'User receives 15% of total beans pot',
-    3: 'User receives 10% of total beans pot',
-    4: 'User receives 5% of total beans pot'
-}
-const userRewardsImgRound2 = {
-    0: 'img/user-rewards/BeansPot1.png',
-    1: 'img/user-rewards/BeansPot2.png',
-    2: 'img/user-rewards/BeansPot3.png',
-    3: 'img/user-rewards/BeansPot4.png',
-    4: 'img/user-rewards/BeansPot5.png'
 }
 const talentRewardsImgRound2 = {
     0: 'img/talent-rewards/Rewards1.png',
@@ -95,9 +74,9 @@ let leaderboardRound = 1;
 
 function setRewardData() {
     if (mode == 'user') {
-        document.getElementById('reward-rank').innerHTML = round === 1 ? userRankTextRound1[slideNumber] : userRankTextRound2[slideNumber];
-        document.getElementById('reward-description').innerHTML = round === 1 ? userRewardsRound1[slideNumber] : userRewardsRound2[slideNumber];
-        document.getElementById('reward-img').src = round === 1 ? userRewardsImgRound1[slideNumber] : userRewardsImgRound2[slideNumber];
+        document.getElementById('reward-rank').innerHTML = userRankText[slideNumber];
+        document.getElementById('reward-description').innerHTML = userRewards[slideNumber];
+        document.getElementById('reward-img').src = userRewardsImg[slideNumber];
     }
     else {
         document.getElementById('reward-rank').innerHTML = round === 1 ? talentRankTextRound1[slideNumber] : talentRankTextRound2[slideNumber];
@@ -127,6 +106,7 @@ function onRight() {
 function setUserModeOnRewards() {
     document.getElementById('reward-userbtn').src = "img/userBtn.png";
     document.getElementById('reward-talentbtn').src = "img/talentUnselectedBtn.png";
+    document.getElementById('talents-tab').style.display = 'none';
     mode = 'user';
     slideNumber = 0;
     setRewardData();
@@ -135,6 +115,7 @@ function setUserModeOnRewards() {
 function setTalentModeOnRewards() {
     document.getElementById('reward-userbtn').src = "img/userUnselectedBtn.png";
     document.getElementById('reward-talentbtn').src = "img/talentBtn.png";
+    document.getElementById('talents-tab').style.display = 'block';
     mode = 'talent';
     slideNumber = 0;
     setRewardData();

@@ -90,6 +90,10 @@ button {
     margin: 5vw auto;
 }
 
+#talents-tab {
+    display: none;
+}
+
 .reward-banner {
     background-image: url(../img/rewardsbg.png);
     background-size: 100% 100%;
