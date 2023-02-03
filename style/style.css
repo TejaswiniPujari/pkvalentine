@@ -118,10 +118,13 @@ button {
     position: relative;
     top: -1vw;
 }
-
+.hrimg{
+    background-image: url(../img/w.png);
+    transform: scale(1,5);
+}
 .col3 {
     display: grid;
-    grid-template-columns: 5% 70% 5%;
+    grid-template-columns: 5% 80% 5%;
     justify-content: space-around;
 }
 
@@ -192,7 +195,7 @@ tbody tr {
     font-weight: bold;
     color: darkblue;
     width: 100%;
-    margin-top: 1vw;
+    margin-top: -0.5vw;
 }
 
 tbody tr img {
