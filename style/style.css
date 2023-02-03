@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#modal {
+    display: none;
+}
+
+.main {
+    opacity: 0.2;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.close-btn {
+    margin-top: 30vw;
+    text-align: end;
+    width: 100vw;
+}
+
+.modal {
+    position: fixed;
+    z-index: 2;
+}
+
+.guidline-title {
+    width: 50vw;
+    margin: 0 auto
+}
+
+.guidline {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.guidline-banner {
+    background-image: url(../img/leaderboardbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 8vw;
+    color: white;
+}
+
+.rules {
+    padding: 0 5vw 0 10vw;
+    margin-top: 2vw;
+    max-height: 60vh;
+    overflow: auto;
+    font-size: 5vw;
+}
+
+.guid-btn {
+    position: absolute;
+    top: 60vw;
+    width: 30vw;
+    right: 0vw;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.col2-usertalentbtn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col2-round1round2btn {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-around;
+}
+
+.banner {
+    width: 95vw;
+    margin: 5vw auto;
+}
+
+.reward-banner {
+    background-image: url(../img/rewardsbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.schedule-banner {
+    background-image: url(../img/schedulebg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.leaderboard-banner {
+    background-image: url(../img/leaderboardbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.reward-tag {
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    top: -1vw;
+}
+
+.col3 {
+    display: grid;
+    grid-template-columns: 5% 70% 5%;
+    justify-content: space-around;
+}
+
+.reward-description {
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5vw 0;
+}
+
+.reward-rank {
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.table {
+    padding-bottom: 3vw;
+    width: 85vw;
+    margin: 0 auto;
+    padding-right: 2vw;
+}
+
+#talent-reward-title {
+    font-size: 5vw;
+    padding: 5vw;
+}
+
+#reward-table {
+    position: relative;
+    top: -8vw;
+}
+
+thead tr {
+    display: grid;
+    grid-template-columns: 15% 32% auto 32% 15%;
+    font-size: 5.5vw;
+    color: white;
+    padding: 1.5vw;
+    background-color: #00008b80;
+    border-radius: 2vw;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+thead tr img {
+    height: 5vw;
+}
+
+tbody tr {
+    display: grid;
+    grid-template-columns: 15% 32% auto 32% 15%;
+    font-size: 2.5vw;
+    background-image: url(../img/strip.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5vw;
+    font-weight: bold;
+    color: darkblue;
+    width: 100%;
+    margin-top: 1vw;
+}
+
+tbody tr img {
+    height: 5vw;
+}
+
+#schedule-table {
+    position: relative;
+    top: -13vw;
+    padding: 0 1.5vw;
+}
+
+#round2-schedule {
+    display: none;
+}
+
+#footer {
+    padding: 0vw 0 5vw;
+    text-align: center;
+    font-size: 5vw;
+    color: #e3d7d7;
+}
+
+.top3 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    padding: 5vw 0;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.bean {
+    height: 3vw;
+    padding-right: 1vw;
+}
+
+.gold-frame {
+    position: relative;
+    top: -5vw;
+}
+
+.t1 {
+    background-image: url(../img/leaderboardNameBg1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 82vw;
+    margin: 0 auto;
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.t2 {
+    background-image: url(../img/leaderboardNameBg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 82vw;
+    margin: 0 auto;
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.col4 {
+    display: grid;
+    grid-template-columns: 5% 11% auto 25%;
+    color: white;
+    font-size: 3.3vw;
+    align-items: center;
+    font-weight: lighter;
+}
+
+#leaderboard-user-round2,
+#leaderboard-talent-round1,
+#leaderboard-talent-round2 {
+    display: none;
+}
