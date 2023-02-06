@@ -64,9 +64,24 @@ body {
 
 .guid-btn {
     position: absolute;
-    top: 60vw;
-    width: 30vw;
-    right: 0vw;
+    top: 65vw;
+    width: 100vw;
+    text-align: end;
+}
+
+.dateandmonth {
+    width: 70vw;
+    margin: 0 auto;
+    background-image: url(../img/datebg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 5vw;
+}
+
+.dateandmonth img {
+    transform: scale(0.7);
+    position: relative;
+    top: 3vw;
 }
 
 button {
@@ -118,10 +133,12 @@ button {
     position: relative;
     top: -1vw;
 }
-.hrimg{
+
+.hrimg {
     background-image: url(../img/w.png);
-    transform: scale(1,5);
+    transform: scale(1, 5);
 }
+
 .col3 {
     display: grid;
     grid-template-columns: 5% 80% 5%;
@@ -145,14 +162,14 @@ button {
     width: 70vw;
     margin: 0 auto;
     text-align: center;
-    padding-top: 2vw;
+    padding: 2vw 0;
 }
 
 .table {
     padding-bottom: 3vw;
     width: 85vw;
     margin: 0 auto;
-    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
 #talent-reward-title {

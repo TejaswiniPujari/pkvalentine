@@ -17,10 +17,10 @@ const userRankText = {
     4: '5-10th Rank'
 }
 const talentRankTextRound1 = {
-    0: 'target 10 Million & Above Gems',
-    1: 'target 05- 10 Million Gems',
-    2: 'target 03- 05 Million Gems',
-    3: '01- 03 Million Gems',
+    0: 'target 05 Million & Above Gems ',
+    1: 'target 03 - 05 Million Gems ',
+    2: 'target 01 - 03 Million Gems',
+    3: 'target 500K – 1 Million Gems ',
 }
 const userRewards = {
     0: 'User receives 25% of total beans pot',
@@ -37,22 +37,22 @@ const userRewardsImg = {
     4: 'img/user-rewards/BeansPot5.png'
 }
 const talentRewardsImgRound1 = {
-    0: 'img/talent-rewards/Rewards1.png',
-    1: 'img/talent-rewards/Rewards2-3.png',
-    2: 'img/talent-rewards/Rewards2-3.png',
+    0: 'img/talent-rewards/Rewards2-3.png',
+    1: 'img/talent-rewards/Rewards4.png',
+    2: 'img/talent-rewards/Rewards4.png',
     3: 'img/talent-rewards/Rewards4.png',
 }
 const talentRewardsRound1 = {
-    0: '15 days PK STAR BADGE + Audio theme of PK combat + PK Superstar Profile Frame ',
-    1: '10 days Audio theme of PK combat + PK Superstar Profile Frame',
-    2: '07 days Audio theme of PK combat + PK Superstar Profile Frame',
-    3: '5 days Audio theme of PK combat',
+    0: '10 Days Audio Room theme + Profile Frame',
+    1: '5 Days Audio Room theme',
+    2: '3 Days Audio Room theme',
+    3: '1 Days Audio Room theme',
 }
 const talentRankTextRound2 = {
-    0: 'target 10 Million & Above Gems',
-    1: 'target 05- 10 Million Gems',
-    2: 'target 03- 05 Million Gems',
-    3: '01- 03 Million Gems',
+    0: 'target 10 Million & Above Gems ',
+    1: 'target 05- 10 Million Gems ',
+    2: 'target 03- 05 Million Gems ',
+    3: 'target 01- 03 Million Gems ',
 }
 const talentRewardsImgRound2 = {
     0: 'img/talent-rewards/Rewards1.png',
@@ -61,10 +61,10 @@ const talentRewardsImgRound2 = {
     3: 'img/talent-rewards/Rewards4.png',
 }
 const talentRewardsRound2 = {
-    0: '15 days PK STAR BADGE + Audio theme of PK combat + PK Superstar Profile Frame ',
-    1: '10 days Audio theme of PK combat + PK Superstar Profile Frame',
-    2: '07 days Audio theme of PK combat + PK Superstar Profile Frame',
-    3: '5 days Audio theme of PK combat',
+    0: '15 days PK SUPER STAR BADGE + Audio theme of PK SuperStar + PK SUperStar Profile Frame',
+    1: '10 days Audio theme of PK SuperStar + PK SUperStar Profile Frame',
+    2: '07 days Audio theme of PK SuperStar',
+    3: '5 days Audio theme of PK SuperStar',
 }
 let slideNumber = 0;
 let mode = 'user';
